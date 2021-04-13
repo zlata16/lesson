@@ -14,11 +14,14 @@
 		.container {
 			width: 400px;
 			background-color: #00FFFF;
-			margin: 0 auto  
-			
+			margin: 0 auto  	
 		}
-		form input {
-			width: 98%
+		label {
+			display: inline-block;
+			width: 100%
+		}
+		form input :not([type="checkbox"]):not([type="radio"]) {
+		width: 100%
 		}
 		.box {
 			border:2px solid #ff0000;
@@ -45,6 +48,81 @@
 			<input type="tel" name="phone" id="phone" placeholder="Телефон">
 		</p>
 
+		<p>
+			<label for="date">Дата рождения</label>
+			<input type="date" name="date" id="date" placeholder="date">
+		</p>
+
+		<p>
+			<label for="email">Почта</label>
+			<input type="email" name="email" id="email" placeholder="email">
+		</p>
+
+		<div>
+			<label>Фрукты</label>
+			<label>
+				<input type="checkbox" name="fruit">
+				Яблоки🍏🍎
+			</label>
+			<label>
+				<input type="checkbox" name="fruit">
+				Бананы🍌
+			</label>	
+			<label>
+				<input type="checkbox" name="fruit">
+				Груши🍐
+			</label>
+			<label>
+				<input type="checkbox" name="fruit">
+				Мандарины🍊
+			</label>
+		</div>
+
+		<div>
+			<label>Напитки</label>
+			<label>
+				<input type="checkbox" name="drinks">
+				Сок
+			</label>
+			<label>
+				<input type="checkbox" name="drinks">
+				Кофе☕
+			</label>	
+			<label>
+				<input type="checkbox" name="drinks">
+				Чай
+			</label>
+			<label>
+				<input type="checkbox" name="drinks">
+				Алкашка🍷
+			</label>
+			<label>
+				<input type="checkbox" name="drinks">
+				Вода😍
+			</label>
+		</div>
+
+		<div>
+			<label>Время года</label>
+			<label>
+				<input type="radio" name="season">
+				<img src="images/winter.png" alt="Зима"/>
+			</label>
+			<label>
+				<input type="radio" name="season">
+				<img src="images/spring.png" alt="Весна"/>
+			</label>
+			<label>
+				<input type="radio" name="season">
+				<img src="images/summer.png" alt="Лето"/>
+			</label>	
+			<label>
+				<input type="radio" name="season">
+				<img src="images/autumn.png" alt="Осень"/>
+			</label>
+		</div>
+
+					
 		<div>
 			<p><label for="course">Класс</label></p>
 			<p>

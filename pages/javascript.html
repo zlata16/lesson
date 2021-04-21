@@ -3,8 +3,15 @@
 <html>
 <head>
 	<title>JavaScript</title>
-
-	<script type="text/javascript" src="../asset/js/main.js"></script>
+<style type="text/css">
+	table {
+		text-align: center;
+	}
+	input {
+		width: 100%
+	}
+</style>
+	
 </head>
 <body>
 
@@ -12,9 +19,82 @@
 		<input type="color" name="color" id="color" onchange="selectColor();">
 	</p>
 
+    <p>
+	Цвет:<span id="result"></span>
+    </p>
 	<p>
 		<!--<button onclick="changeColor();">changeColor</button>-->
-	</p>
+	</p> 
 
+	<table class="table">
+    	
+    		<thead>
+    			<tr>
+    			<th colspan="4">
+    				<input type="text" name="enter" id="enter" > 
+    			</th>
+    		</tr>
+    	</thead>
+    	<tbody>
+    		<tr>
+    			<td>
+    				<input type="button" class="namber" value="7"> 
+    			</td>
+    			<td>
+    				<input type="button" class="namber" value="8"> 
+    			</td>
+    			<td>
+    				<input type="button" class="namber" value="9"> 
+    			</td>
+    			<td>
+    				<input type="button" class="namber" value="+"> 
+    			</td>
+    		</tr>
+
+    		<tr>
+    			<td>
+    				<input type="button" class="namber" value="4"> 
+    			</td>
+    			<td>
+    				<input type="button" class="namber" value="5"> 
+    			</td>
+    			<td>
+    				<input type="button" class="namber" value="6"> 
+    			</td>
+    			<td>
+    				<input type="button" class="namber" value="-"> 
+    			</td>
+    		</tr>
+
+    		<tr>
+    			<td>
+    				<input type="button" class="namber" value="1"> 
+    			</td>
+    			<td>
+    				<input type="button" class="namber" value="2"> 
+    			</td>
+    			<td>
+    				<input type="button" class="namber" value="3"> 
+    			</td>
+    			<td>
+    				<input type="button" class="namber" value="*"> 
+    			</td>
+    		</tr>
+
+    		<tr>
+    			<td>
+    				<input type="button" class="namber" value="0"> 
+    			</td>
+    			<td>
+    				<input type="button" class="namber" value="="> 
+    			</td>
+    			<td>
+    				<input type="button" class="namber" value="/"> 
+    			</td>
+    		
+    		</tr>
+      	</tbody>
+    </table>
+    <script type="text/javascript" src="../asset/js/main.js"></script>
 </body>
 </html>
